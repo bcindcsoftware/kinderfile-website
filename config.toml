@@ -1,0 +1,30 @@
+baseURL = "https://kinderfile.com/"
+languageCode = "en-us"
+title = "KinderFile — Staff Credential Compliance Tracking for Daycare Centers"
+paginate = 10
+enableRobotsTXT = false
+
+[params]
+  description = "Track CPR certs, background checks, and staff credentials for your daycare center. Automatic SMS reminders before anything expires. Free 90-day pilot for PG County directors."
+  ogImage = "/images/og-image.png"
+  author = "Brad Clements"
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[permalinks]
+  blog = "/blog/:slug/"

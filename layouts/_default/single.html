@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+<article class="blog-post">
+  <div class="blog-post__container">
+    <header class="blog-post__header">
+      <h1 class="blog-post__title">{{ .Title }}</h1>
+      <div class="blog-post__meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        <span class="blog-post__reading-time">{{ math.Round (div (countwords .Content) 250.0) }} min read</span>
+      </div>
+    </header>
+
+    {{ with .Params.image }}
+    <img class="blog-post__image" src="{{ . }}" alt="{{ $.Title }}">
+    {{ end }}
+
+    <div class="blog-post__content">
+      {{ .Content }}
+    </div>
+
+    <footer class="blog-post__footer">
+      <p class="blog-post__author">By Brad Clements, Founder of KinderFile</p>
+
+      {{ if .Params.tags }}
+      <div class="blog-post__tags">
+        {{ range .Params.tags }}
+        <span class="blog-post__tag">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </footer>
+
+    {{ partial "blog-cta.html" . }}
+
+    <!-- Related Posts -->
+    {{ $related := first 3 (where (where .Site.RegularPages "Section" "blog") ".Permalink" "ne" .Permalink) }}
+    {{ if ge (len $related) 2 }}
+    <section class="related-posts">
+      <h2 class="related-posts__headline">More Articles</h2>
+      <div class="related-posts__list">
+        {{ range $related }}
+        <a href="{{ .Permalink }}" class="related-posts__item">
+          <h3>{{ .Title }}</h3>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        </a>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  </div>
+</article>
+
+{{ end }}

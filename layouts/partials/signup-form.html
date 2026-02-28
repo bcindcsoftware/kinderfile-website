@@ -1,0 +1,35 @@
+<section class="signup" id="signup">
+  <div class="signup__container">
+    <h2 class="signup__headline">Sign Up for the Free Pilot</h2>
+    <form name="pilot-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="signup__form">
+      <input type="hidden" name="form-name" value="pilot-signup">
+      <p class="visually-hidden">
+        <label>Don't fill this out if you're human: <input name="bot-field"></label>
+      </p>
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="center">Center Name</label>
+        <input type="text" id="center" name="center" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="headache">What's your biggest headache with staff credential tracking?</label>
+        <textarea id="headache" name="headache" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary btn--large">Request Free Access</button>
+    </form>
+    <div class="signup__success" hidden>
+      <p>Thanks! We'll be in touch within 24 hours to schedule your onboarding call.</p>
+    </div>
+  </div>
+</section>

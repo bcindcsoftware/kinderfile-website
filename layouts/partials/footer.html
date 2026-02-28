@@ -1,0 +1,33 @@
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo" aria-label="KinderFile home">
+          <img src="/images/logo.svg" alt="KinderFile" height="32">
+        </a>
+        <p class="footer__tagline">Staff credential compliance tracking for daycare centers.</p>
+      </div>
+      <div class="footer__links">
+        <a href="/blog/">Blog</a>
+        <a href="/#signup">Contact</a>
+        <a href="/login/">Log In</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 KinderFile. Built in Bowie, MD.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Redirect after Netlify Identity login (for Decap CMS) -->
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function() {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>

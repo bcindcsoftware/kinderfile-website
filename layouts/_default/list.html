@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<section class="blog-index">
+  <div class="blog-index__container">
+    <h1 class="blog-index__headline">{{ .Title }}</h1>
+    {{ if .Pages }}
+    <div class="blog-index__list">
+      {{ range .Pages.ByDate.Reverse }}
+      <article class="blog-card">
+        <h2 class="blog-card__title">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+        <time class="blog-card__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        <p class="blog-card__excerpt">{{ .Description | truncate 160 }}</p>
+        <a href="{{ .Permalink }}" class="blog-card__link">Read more &rarr;</a>
+      </article>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p class="blog-index__empty">No posts yet. Check back soon for compliance tips and guides for daycare directors.</p>
+    {{ end }}
+  </div>
+</section>
+
+<section class="blog-banner">
+  <div class="blog-banner__container">
+    <p class="blog-banner__text">Tired of tracking credentials manually? <strong>Try KinderFile free for 90 days.</strong></p>
+    <a href="/#signup" class="btn btn--primary">Sign Up Now</a>
+  </div>
+</section>
+
+{{ end }}

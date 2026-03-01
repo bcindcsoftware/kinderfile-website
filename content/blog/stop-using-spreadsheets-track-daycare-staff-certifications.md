@@ -1,6 +1,6 @@
 ---
 title: "Stop Using Spreadsheets to Track Daycare Staff Certifications"
-date: 2026-02-26
+date: 2026-02-17
 description: "Why spreadsheets fail daycare directors who are tracking staff credential expirations — and what actually works to prevent lapsed certifications, inspection citations, and staffing disruptions."
 slug: "stop-using-spreadsheets-track-daycare-staff-certifications"
 tags: ["spreadsheets", "compliance", "credentials", "daycare director", "certification tracking"]

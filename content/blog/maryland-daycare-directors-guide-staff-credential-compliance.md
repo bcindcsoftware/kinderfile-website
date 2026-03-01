@@ -1,4 +1,12 @@
-# The Maryland Daycare Director's Guide to Staff Credential Compliance
+---
+title: "The Maryland Daycare Director's Guide to Staff Credential Compliance"
+date: 2026-02-28
+description: "A complete guide to the 6 staff credentials Maryland daycare directors must track — renewal timelines, what happens when they lapse, and how to stay inspection-ready."
+slug: "maryland-daycare-directors-guide-staff-credential-compliance"
+tags: ["maryland", "compliance", "credentials", "daycare director", "licensing"]
+image: ""
+draft: false
+---
 
 *Every Maryland daycare director knows the feeling: a licensing inspector walks through the door, and you're scrambling to remember whether Sarah's CPR certification expired last month or next month. One lapsed credential can mean a citation, a corrective action plan, or worse — a staff member pulled from the floor mid-shift because they're out of compliance.*
 

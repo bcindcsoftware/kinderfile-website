@@ -1,10 +1,12 @@
 ---
 title: "How to Prepare for a Maryland Childcare Licensing Inspection"
+seo_title: "How to Prepare for a Maryland Childcare Licensing Inspection | KinderFile"
 date: 2026-02-22
-description: "A step-by-step guide to Maryland childcare licensing inspections — what OCC inspectors evaluate, the 5 most common citation areas, and a preparation checklist you can use even if your inspection is next week."
+description: "Step-by-step checklist to prepare for a Maryland childcare licensing inspection. Know what inspectors look for before they arrive."
 slug: "how-to-prepare-maryland-childcare-licensing-inspection"
 tags: ["inspection", "maryland", "licensing", "compliance", "OCC"]
 image: ""
+author: "Brad Clements"
 draft: false
 ---
 

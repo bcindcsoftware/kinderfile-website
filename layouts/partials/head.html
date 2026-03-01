@@ -1,27 +1,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | KinderFile{{ end }}</title>
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
-<!-- Google Search Console verification (replace with actual code) -->
+<!-- Google Search Console verification -->
 <meta name="google-site-verification" content="knosdbQxU4vDRZGZpoLCHCLx0U6-BriX91of7FR8iZs" />
 
-<!-- Canonical URL -->
-<link rel="canonical" href="{{ .Permalink }}">
+<!-- SEO: title, description, canonical, OG, Twitter -->
+{{ partial "head-seo.html" . }}
 
-<!-- Open Graph -->
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:title" content="{{ .Title }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ .Site.Params.ogImage | absURL }}{{ end }}">
-<meta property="og:site_name" content="KinderFile">
+<!-- Structured Data: Schema.org -->
+{{ partial "structured-data.html" . }}
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title }}">
-<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="twitter:image" content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ .Site.Params.ogImage | absURL }}{{ end }}">
+<!-- Google Analytics -->
+{{ partial "google-analytics.html" . }}
 
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -34,56 +24,6 @@
 
 <!-- Styles -->
 <link rel="stylesheet" href="/css/style.css">
-
-{{ if .IsHome }}
-<!-- Schema.org Organization -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "KinderFile",
-  "url": "https://kinderfile.com",
-  "logo": "https://kinderfile.com/images/logo.svg",
-  "description": "{{ .Site.Params.description }}",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Bowie",
-    "addressRegion": "MD",
-    "addressCountry": "US"
-  }
-}
-</script>
-{{ end }}
-
-{{ if and .IsPage (eq .Section "blog") }}
-<!-- Schema.org Article -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ .Title }}",
-  "description": "{{ .Description }}",
-  "datePublished": "{{ .Date.Format "2006-01-02" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-  "author": {
-    "@type": "Person",
-    "name": "Brad Clements"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "KinderFile",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://kinderfile.com/images/logo.svg"
-    }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
-  }
-}
-</script>
-{{ end }}
 
 <!-- Netlify Identity Widget (for Decap CMS) -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

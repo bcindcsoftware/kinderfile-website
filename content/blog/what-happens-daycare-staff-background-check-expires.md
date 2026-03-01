@@ -1,10 +1,12 @@
 ---
 title: "What Happens When a Daycare Staff Member's Background Check Expires?"
+seo_title: "What Happens When a Daycare Background Check Expires? | KinderFile"
 date: 2026-02-10
-description: "What Maryland law requires when a daycare staff member's background check lapses — the operational consequences, the renewal timeline, what inspectors actually do, and how to prevent it from happening at your center."
+description: "In Maryland, staff with expired background checks cannot be unsupervised with children. Learn the consequences and how to prevent lapses."
 slug: "what-happens-daycare-staff-background-check-expires"
 tags: ["background check", "compliance", "maryland", "COMAR", "daycare director", "CJIS"]
 image: ""
+author: "Brad Clements"
 draft: false
 ---
 

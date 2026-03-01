@@ -1,10 +1,12 @@
 ---
 title: "The Maryland Daycare Director's Guide to Staff Credential Compliance"
+seo_title: "Maryland Daycare Staff Credential Compliance Guide | KinderFile"
 date: 2026-02-28
-description: "A complete guide to the 6 staff credentials Maryland daycare directors must track — renewal timelines, what happens when they lapse, and how to stay inspection-ready."
+description: "Complete guide to Maryland daycare staff credential requirements including background checks, CPR, CPS clearances, and COMAR regulation references."
 slug: "maryland-daycare-directors-guide-staff-credential-compliance"
 tags: ["maryland", "compliance", "credentials", "daycare director", "licensing"]
 image: ""
+author: "Brad Clements"
 draft: false
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: "Stop Using Spreadsheets to Track Daycare Staff Certifications"
+seo_title: "Stop Using Spreadsheets to Track Daycare Staff Certifications | KinderFile"
 date: 2026-02-17
-description: "Why spreadsheets fail daycare directors who are tracking staff credential expirations — and what actually works to prevent lapsed certifications, inspection citations, and staffing disruptions."
+description: "Why spreadsheets fail at tracking daycare staff certifications and what to do instead. Real compliance risks and a simpler solution."
 slug: "stop-using-spreadsheets-track-daycare-staff-certifications"
 tags: ["spreadsheets", "compliance", "credentials", "daycare director", "certification tracking"]
 image: ""
+author: "Brad Clements"
 draft: false
 ---
 

@@ -8,7 +8,7 @@ enableRobotsTXT = false
   description = "Track CPR certs, background checks & 4 more credential types for daycare staff. Automatic SMS reminders. Free 90-day pilot for PG County directors."
   og_image = "/images/og-kinderfile.png"
   author = "Brad Clements"
-  ga4_id = ""
+  ga4_id = "G-C0HRZZ5J0P"
 
 [taxonomies]
   tag = "tags"

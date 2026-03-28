@@ -10,7 +10,7 @@ draft: false
 **Effective Date:** March 13, 2026  
 **Last Updated:** March 13, 2026
 
-KinderFile ("we," "us," or "our") is operated by B&B Music World LLC. This Privacy Policy explains how we collect, use, disclose, and safeguard information when you use the KinderFile compliance management platform ("Service").
+KinderFile ("we," "us," or "our") is operated by B&B Music World LLC. This service is operated by B&B Music World LLC, 9909 Locust Street, Glenn Dale, MD 20769. This Privacy Policy explains how we collect, use, disclose, and safeguard information when you use the KinderFile compliance management platform ("Service").
 
 ---
 

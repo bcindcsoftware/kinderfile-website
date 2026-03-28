@@ -10,7 +10,7 @@ draft: false
 **Effective Date:** March 13, 2026  
 **Last Updated:** March 13, 2026
 
-These Terms of Service ("Terms") govern your use of the KinderFile compliance management platform ("Service"), operated by B&B Music World LLC ("KinderFile," "we," "us," or "our"). By accessing or using the Service, you agree to these Terms.
+These Terms of Service ("Terms") govern your use of the KinderFile compliance management platform ("Service"), operated by B&B Music World LLC ("KinderFile," "we," "us," or "our"). This service is operated by B&B Music World LLC, 9909 Locust Street, Glenn Dale, MD 20769. By accessing or using the Service, you agree to these Terms.
 
 ---
 
